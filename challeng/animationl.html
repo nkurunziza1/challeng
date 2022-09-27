@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation learning</title>
+    <style type="text/css" >
+        body{
+            background: #333;
+        }
+.lorem{
+    display: grid;
+grid-template-columns: repeat(3,300px);
+font-family: consolas;
+/* background: steelblue; */
+color: white;
+/* border: 2px solid white; */
+position: relative;
+}
+.p{
+    padding: 10px;
+    border: 2px solid white;
+    margin-right: 3px;
+    background: #368694;
+    animation-name: prage;
+    animation-duration: 3s ;
+ animation-fill-mode: forwards; 
+    opacity: 0; 
+    animation-delay: 0.1s;
+    animation-timing-function: ease-in-out;
+    position: relative;
+    
+
+    
+
+
+}
+@keyframes prage{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+
+
+    </style>
+</head>
+<body><div class="lorem">
+    <p class="p 1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, temporibus?</p>
+    <p class="p 2">Lorem ipsum dolor sit amet.</p>
+    <p class="p 3">Lorem ipsum dolor sit amet consectetur adipisicing.</p></div>
+</body>
+</html>

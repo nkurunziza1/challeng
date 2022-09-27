@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>film maker.com</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2,500px);
+            /* border: 2px solid rgb(90, 69, 69); */
+            width: auto;
+            height: 100vh;
+        }
+        .items{
+            border: px solid wheat;
+            margin-right: 3px;
+            /* background-color: rgba(230, 227, 227, 0.8); */
+            /* background:linear-gradient(to top left ,rgb(24, 4, 4,)); */
+        }
+.items:nth-child(1){
+    width: 300px;
+    box-shadow: 0px 0px 14px 0px grey;
+    margin-left: 70px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid rgb(221, 221, 221);
+    /* background-color: brown; */
+    /* background:  rgb(163, 33, 33); */
+    mix-blend-mode: color;
+    background: linear-gradient(to left, rgba(225,225,225,) , rgb(78, 82, 87));
+/* display: flex; */
+    
+    
+
+}
+.items:nth-child(2){
+    width: 700px;
+     margin-top: 30px; 
+    margin-bottom: 30px;
+    background: rgba(12, 0, 0, 0.9);
+    background-size: cover;
+    /* mix-blend-mode: overlay; */
+    background-blend-mode: color;
+    background-image: url(/projects/image/focus.jpg);
+    background-size: cover;
+    /* height: 100%; */
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 10px 10px  14px 1px rgb(88, 71, 71);
+    opacity: 90%;
+    position: relative;
+    
+}
+.items h1{
+color: rgb(255, 255, 255);
+text-align:center;
+text-transform: uppercase;
+font-family: consolas;
+align-items: center;
+padding-top: 60px;
+position: absolute;
+margin-left: 70px;
+font-weight: bold;
+font-size: 40px;
+animation: chance 3s ease-in-out ;
+animation-fill-mode: forwards;
+
+
+}
+@keyframes chance{
+    0%{
+        top: -60px;
+    }
+    100%{
+        top: 10px;
+    }
+}
+.items p{
+
+    color: white;
+     position: relative; 
+text-transform: uppercase;
+font-family: consolas;
+padding-top: 200px;
+margin-left: 70px;
+width: 600px;
+letter-spacing: 1.3px;
+animation-name: change;
+animation-duration: 10s;
+opacity: 0;
+animation-fill-mode: forwards;
+/* animation-timing-function: ease-in infinite;  */
+/* animation: change 4s ease-in infinite;
+opacity: 0; */
+/* animation-iteration-count: infinite; */
+animation-play-state: opacity;
+font-size: 27px;
+
+
+}
+@keyframes change{
+
+0%{
+    opacity: 0;
+}
+100%{
+    opacity: 1;
+}
+
+
+}
+    button{
+        padding: 10px;
+        width: 150px;
+        background: rgb(163, 33, 33);
+        color: white;
+        border-radius: 50px;
+        font-size: 20px;
+        transition-duration: 3s;
+        transition-timing-function: ;
+        transition-property: background,color,transform;
+        transition-delay: 0.1s;
+        position: absolute;
+        margin-top: 280px;
+        margin-left: 0px;
+        border-collapse: collapse;
+        border: 1px solid  rgb(163, 33, 33);
+        
+        
+
+
+    }button:hover{
+        background: white;
+        color: red;
+        font-family: arial;
+        transform: rotateZ( 360deg);
+    }
+    span{
+   margin-left: 150px;
+   z-index: 3;
+    }
+   .items img:nth-child(1){
+      width: 100px; 
+      height: 100px; 
+      border-radius: 50%;
+      margin-left: 10px;
+      top: 160px;
+      position: absolute;
+    }
+    
+
+   .items img:nth-child(2){
+      width: 100px ; 
+      height: 100px; 
+      border-radius: 50%;
+      margin-left: 50px;
+      margin-top: 30px;
+      top: 160px;
+      position: absolute;
+
+    }
+    
+
+   .items img:nth-child(3){
+      width: 100px; 
+      height: 100px; 
+      border-radius: 50%;
+      margin-left: 90px;
+      
+      
+    }
+    .login{
+        /* background-color: white; */
+        background-color: rgb(163, 33, 33);
+        width: 300px;
+        height: 40px;
+    padding: 10px;
+    /* border: 2px solid white; */
+    border-radius: 4px 4px 4px 4px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left:100px ;
+    position: relative;
+    }
+    label{
+        font-family: arial;
+        color: white;
+    }
+    input{
+        padding: 4px;
+        margin-left: 20px;
+        border: white;
+        border-bottom: 1px solid black;
+         /* border-radius: 4px;  */
+        background: transparent;
+        
+    }
+    ::placeholder{
+        color: white;
+        font-size: 14px;
+        opacity: 0.4;
+        
+    }
+.black{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 50px;
+    opacity: 0.9;
+    margin-top: 60px;
+    position: relative;
+}
+
+.black h2{
+    color:white;
+    font-family: consolas;
+    text-align: center;
+    
+}
+main{
+    font-family: consolas;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+color:;
+font-weight:bolder ;
+
+}
+ .cobla{
+    background: #000;
+    margin: 3px;
+     position: relative; 
+} 
+h2{
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+  margin-top: 60px;
+  background: linear-gradient(right to left ,rgb(204, 204, 164),rgb(126, 93, 93));
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+<div class="items">
+    <h2>Join us</h2>
+   <main><img src="/projects/image/focus.jpg" alt=""></main>
+   <form class="input">
+    <label for="" id="hi"> Name:</label>
+    <input type="text" name="name" id="ji" placeholder="fill name"required>
+    <label for="Email">Email:</label>
+    <input type="text" name="" id="" placeholder="Alexandre@gmail.com"required>
+    <label for="password">Password:</label>
+    <input type="number" name="password" id="">
+    <input type="radio" name="" id="">
+    <label for="">Students</label>
+    <input type="radio" name="" id="" placeholder="if your">
+    <label for="">Employer</label>
+    <label for="">Date:</label>
+    <input type="date" name="" id="">
+
+
+
+    
+
+   </form> 
+    
+</div>
+<div class="items">
+    <h1>Welcom to Focus music <br> Studios</h1>
+    
+    <p>we here for produce top music to you.
+       <br> <span> Don't miss!!!!</span> 
+
+
+    </p>
+
+     <img src="/projects/image/focus.jpg" alt="">
+    
+     <button> Watch more </button> -->
+     <div class="login"><label for="">Name:</label>
+     <input type="text" name="" id="" placeholder="Leave your name here">
+
+    </div> 
+</div>
+    </div>
+</body>
+</html>
